@@ -1,0 +1,24 @@
+{
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start & adb reverse tcp:8081 tcp:8081",
+    "compileBundle":"node node_modules/react-native/local-cli/cli.js bundle --platform android --entry-file index.js --dev false --bundle-output android/app/assets/index.android.bundle --assets-dest android/app/assets/",
+    "compileBundleIos":"node node_modules/react-native/local-cli/cli.js bundle --platform ios --entry-file index.js --dev false --bundle-output dest/index.ios.bundle --assets-dest dest/",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.0.0",
+    "react-native": "0.51.0"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

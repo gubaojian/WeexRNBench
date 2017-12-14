@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.awesomeproject.LauncherActivity"
+    tools:showIn="@layout/activity_launcher">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mall Benchmark"/>
+
+
+        <Button
+            android:id="@+id/rn_mall_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/rn_mall_scroller" />
+
+
+        <Button
+            android:id="@+id/rn_mall_flatlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/rn_mall_flatlist" />
+
+
+        <Button
+            android:id="@+id/weex_scroller_mall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/weex_scroller_mall" />
+
+        <Button
+            android:id="@+id/weex_list_mall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/weex_list_mall" />
+
+        <Button
+            android:id="@+id/weex_recycler_list_mall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/weex_recycler_list_mall" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Load Benchmark"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+
+        <Button
+            android:id="@+id/rn_flatlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/rn_flatlist"/>
+        <Button
+            android:id="@+id/weex_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/weex_list" />
+
+        <Button
+            android:id="@+id/weex_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/weex_scroller" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

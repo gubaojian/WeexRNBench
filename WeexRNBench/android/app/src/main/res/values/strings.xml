@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WeexRNBench</string>
+    <string name="weex_page">Weex Page</string>
+    <string name="rn_page">RN Page</string>
+    <string name="title_activity_launcher">WeexRN Benchmark</string>
+    <string name="rn_flatlist">RN Load FlatList</string>
+    <string name="weex_list">Weex Load List</string>
+    <string name="weex_scroller_mall">Weex Mall Scroller</string>
+    <string name="weex_list_mall">Weex Mall List</string>
+    <string name="weex_recycler_list_mall">Weex Mall RecyclerList</string>
+    <string name="rn_mall_scroller">RN Mall ScrollerView</string>
+    <string name="rn_mall_flatlist">RN Mall FlatList</string>
+    <string name="weex_scroller">Weex Load Scroller</string>
+</resources>
