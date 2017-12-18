@@ -1,3 +1,11 @@
+.babelrc
+.buckconfig
+.gitattributes
+.watchmanconfig
+
+# iOS
+WeexRNBench/ios/Pods/*
+WeexRNBench/ios/Podfile.lock
 # Built application files
 *.apk
 *.ap_
