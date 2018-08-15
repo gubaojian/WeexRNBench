@@ -203,7 +203,6 @@
 				DC3A602D1FE0C4B300522CFC /* Sources */,
 				DC3A602E1FE0C4B300522CFC /* Frameworks */,
 				DC3A602F1FE0C4B300522CFC /* Resources */,
-				81BDFF50AF105B0ADFE2FE9C /* [CP] Embed Pods Frameworks */,
 				295FBAD8B9691D6254BF7213 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -223,8 +222,6 @@
 				DC3A60451FE0C4B300522CFC /* Sources */,
 				DC3A60461FE0C4B300522CFC /* Frameworks */,
 				DC3A60471FE0C4B300522CFC /* Resources */,
-				A2A6D1FC916FD2B4D1FD2917 /* [CP] Embed Pods Frameworks */,
-				DAF7DAAD1F3163F35234BF0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,8 +241,6 @@
 				DC3A60501FE0C4B400522CFC /* Sources */,
 				DC3A60511FE0C4B400522CFC /* Frameworks */,
 				DC3A60521FE0C4B400522CFC /* Resources */,
-				B29FB79C6B9732AF0DC2644D /* [CP] Embed Pods Frameworks */,
-				65AF583B0BBF2AFBB82C408B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,7 +338,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -386,51 +382,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65AF583B0BBF2AFBB82C408B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexBenchmarkUITests/Pods-WeexBenchmarkUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81BDFF50AF105B0ADFE2FE9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexBenchmark/Pods-WeexBenchmark-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2A6D1FC916FD2B4D1FD2917 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexBenchmarkTests/Pods-WeexBenchmarkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B1487B691E7346CC35A32102 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,36 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B29FB79C6B9732AF0DC2644D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexBenchmarkUITests/Pods-WeexBenchmarkUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAF7DAAD1F3163F35234BF0F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexBenchmarkTests/Pods-WeexBenchmarkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
