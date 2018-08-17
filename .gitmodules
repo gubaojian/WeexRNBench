@@ -1,0 +1,3 @@
+[submodule "WeexBenchmark4iOS"]
+	path = WeexBenchmark4iOS
+	url = https://github.com/acton393/WeexBenchmark4iOS.git
